@@ -14,7 +14,7 @@ class Main {
     System.out.println("Welcome");
 
     // print Hello with the quotes displayed
-    System.out.println("\"Hello"\"");
+    System.out.println("\"Hello"\");
     
     // print \Java Code\ as shown
     System.out.println("\\Java Code\\");
