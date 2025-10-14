@@ -10,10 +10,11 @@ class Main {
     Calculate the sum of the two numbers, store the 
     calculated sum and then display it.    
 */
+  double sum = 0;
   int num1 = 5;
   int num2 = 100;
-  int sum = num1 + num2;
-  System.out.println("Sum is "+ sum); // the '+' represents string concatenation
+  sum = num1 + num2;
+  System.out.println("Sum is "+ sum);// the '+' represents string concatenation
 
 /*  
     Challenge 2:
@@ -22,7 +23,12 @@ class Main {
     calculated sum and then display it.
     
 */
-
+   sum = 0;
+   double grade1 = 75;
+   double grade2 = 85;
+   double grade3 = 95;
+   sum = grade1 + grade2 + grade3;
+   System.out.println("Sum of the grades is "+ sum);
 
 // ****NOTE**** Since the variable 'sum' was declared earlier as an integer, you 
 // don't need to declare it again. If you do so, you will get a syntax error.
@@ -37,7 +43,8 @@ class Main {
 
     NOTE: Does it look correct, check with a calculator?
 */
-
+    double average = sum/3.0;
+    System.out.println("Average of the 3 grades is" + average);
 
 // **** NOTE **** since sum is an integer we don't want to divide by another integer
 // 3 because we get integer division and the decimal part will be truncated. 
@@ -50,6 +57,12 @@ class Main {
     Declare and assign values to any new variables.
 
 */
+  double y = 0;
+  double A = 14.5;
+  double x = 3;
+  y = A*1.0/(x+1);
+  System.out.println("y =" + y);
+
 
 
 /*  
@@ -58,14 +71,21 @@ class Main {
     in Java, store the result and the display it:
 */
  // **** NOTE **** The variable y is already declared above so we don't need to re-declare it.
-
-
+  double y = 0;
+  double A = 10.5;
+  double x = 2;
+  y = ((2*x)*(x+1)*(-1.0)*x/2)/A*1.0;
+  System.out.println("y =" + y);
 /*  
     Challenge 6:
     Write the equation in file EQ3.PNG in Jave. Create appropriate variables as required.
     Declare and assign values to any new variables.
 */ 
-
+   double area=0;
+   double b=4.5;
+   double h=5.4;
+   area = 1/2.0*b*h;
+   System.out.println("Area = "+ area +" sq. units"); 
 
 /*  
     **** Bonus Challenge ****:
@@ -79,14 +99,19 @@ class Main {
     2) Write the Java code that will calculate how many eggs
     are left over after all baskets are filled with 12 eggs each.
 */
+     int totalNumOfEggs = 100;
+     int numOfBasketsFilled =0;
+     int remainingEggs = 0;
 
 
     // Use integer division to give us the quotient when dividing by 12
-
+     numOfBasketsFilled = totalNumOfEggs / 12;
+     System.out.println("Number of baskets filled: "+numOfBasketsFilled);
 
     // use the modulus operator to give you the remainder.
-
-
+      remainingEggs = totalNumOfEggs % 12;
+      System.out.println("Remaining number of eggs: "+remainingEggs);
+ 
   
     // **************************************************
     // **** Don't write any code below here.  ***********
